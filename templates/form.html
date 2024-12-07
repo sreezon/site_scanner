@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Domain Scanner</title>
+      <style>
+        form {
+          width: 420px;
+        }
+
+        div {
+          margin-bottom: 20px;
+        }
+
+        label {
+          display: inline-block;
+          width: 240px;
+          text-align: right;
+          padding-right: 10px;
+        }
+
+        button, input {
+          float: right;
+        }
+      </style>
+    </head>
+    <body>
+      <form method="post" action="{{ url_for('scan_page') }}">
+        <div>
+          <label for="scan">Sites to scan (add one site per line):</label>
+          <! <input name="scan" id="scan" value="">
+		  <textarea name="scan" id="scan" cols="60" rows="10"></textarea>
+        </div>
+        <div>
+          <button>Scan sites!</button>
+        </div>
+      </form>
+    </body>
+  </html>
